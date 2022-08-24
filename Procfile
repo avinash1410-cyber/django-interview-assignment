@@ -1,1 +1,1 @@
-web: gunicorn calibre.wsgi --log-file -
+web: gunicorn truevalue.wsgi --log-file -
