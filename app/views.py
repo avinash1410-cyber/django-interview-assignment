@@ -1,13 +1,10 @@
-from cmath import log
-import re
-from turtle import position
 
-from app.serializers import BookSerializer,AccountSerializer
+from app.serializers import BookSerializer
 from .models import Book,Account
 from rest_framework.response import Response
 from rest_framework.views import APIView 
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth import logout
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view
 
